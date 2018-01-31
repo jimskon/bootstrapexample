@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Sample Boot Strap">
+	<meta name="author" content="James Skon">
+
+	<title>Boot Strap Example</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	<!-- Custom styles for this template -->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="http://www.kenyon.edu/">Kenyon</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample03">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://cs.kenyon.edu/do/view">CS Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://cslab.kenyon.edu/">CSLab</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle selection" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page 1</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown03">
+              <a class="dropdown-item" data-page="page1" href="#">Page 1</a>
+              <a class="dropdown-item" data-page="page2" href="#">Page 2</a>
+              <a class="dropdown-item" data-page="page3" href="#">Page 3</a>
+            </div>
+        <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#DonaldKnuth">Donald Knuth</button></li>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-md-0">
+          <input class="form-control" type="text" placeholder="Search">
+        </form>
+      </div>
+    </nav>
+
+	  <hr>
+	  <!-- Modal -->
+<div class="modal fade" id="DonaldKnuth" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Donald Knuth</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <center>
+      <img src="DonaldKnuth.jpg" style="width:50%" class="img-rounded" alt="Donald Knuth">
+	  </center>
+      <div class="modal-body">
+“The best programs are written so that computing machines can perform them quickly and so that human beings can understand them clearly. A programmer is ideally an essayist who works with traditional aesthetic and literary forms as well as mathematical concepts, to communicate the way that an algorithm works and to convince a reader that the results will be correct.” 
+― Donald Ervin Knuth, Selected Papers on Computer Science
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+	  <div class="container page" id="page1">
+	     <h3 class="display-5">Page 1</h3>
+	     <div class="container">
+ 			<div class="row">
+    			<div class="col-sm">
+“There are two ways of constructing a software design.  One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies.”
+(C.A.R. Hoare)
+    			</div>
+    			<div class="col-sm">
+      				“Most software today is very much like an Egyptian pyramid with millions of bricks piled on top of each other, with no structural integrity, but just done by brute force and thousands of slaves.”
+(Alan Kay) 
+    			</div>
+   				<div class="col-sm">
+      				“Complexity kills.  It sucks the life out of developers, it makes products difficult to plan, build and test, it introduces security challenges, and it causes end-user and administrator frustration.”
+(Ray Ozzie) 
+    			</div>
+  			</div>
+		</div>
+	 </div> <!-- /container -->
+
+	  <div class="container page" id="page2" style="display:none;">
+	     <h3 class="display-5">Page 2</h3>
+	     <div class="container">
+ 			<div class="row">
+    			<div class="col-sm">
+      				“The question of whether computers can think is like the question of whether submarines can swim.”
+(Edsger W. Dijkstra)
+    			</div>
+    			<div class="col-sm">
+“Programmers are in a race with the Universe to create bigger and better idiot-proof programs, while the Universe is trying to create bigger and better idiots.  So far the Universe is winning.”
+(Rich Cook) 
+    			</div>
+   				<div class="col-sm">
+“For a long time it puzzled me how something so expensive, so leading edge, could be so useless.  And then it occurred to me that a computer is a stupid machine with the ability to do incredibly smart things, while computer programmers are smart people with the ability to do incredibly stupid things.  They are, in short, a perfect match.”
+(Bill Bryson) 
+    			</div>
+   				<div class="col-sm">
+“A hacker on a roll may be able to produce–in a period of a few months–something that a small development group (say, 7-8 people) would have a hard time getting together over a year.  IBM used to report that certain programmers might be as much as 100 times as productive as other workers, or more.”
+(Peter Seebach) 
+    			</div>
+  			</div>
+		</div>
+	 </div> <!-- /container -->
+
+	  <div class="container page" id="page3" style="display:none;">
+	     <h3 class="display-5">Page 3</h3>
+	     <div class="container">
+ 			<div class="row">
+    			<div class="col-sm">
+“The best programmers are not marginally better than merely good ones.  They are an order-of-magnitude better, measured by whatever standard: conceptual creativity, speed, ingenuity of design, or problem-solving ability.”
+(Randall E. Stross)
+    			</div>
+    			<div class="col-sm">
+ “A great lathe operator commands several times the wage of an average lathe operator, but a great writer of software code is worth 10,000 times the price of an average software writer.”
+(Bill Gates) 
+    			</div>
+   				<div class="col-sm">
+“Computer science education cannot make anybody an expert programmer any more than studying brushes and pigment can make somebody an expert painter.”
+(Eric Raymond) 
+    			</div>
+   				<div class="col-sm">
+ “That’s the thing about people who think they hate computers.  What they really hate is lousy programmers.”
+(Larry Niven) 
+    			</div>
+   				<div class="col-sm">
+ “The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.”
+(Seymour Cray) 
+    			</div>
+   				<div class="col-sm">
+ “Writing in C or C++ is like running a chain saw with all the safety guards removed.”
+(Bob Gray)
+    			</div>
+  			</div>
+		</div>
+	 </div> <!-- /container -->
+
+
+	<footer>
+	<p>&copy; Kenyon CS 2018</p>
+	  </footer>
+
+
+
+		<!-- Bootstrap core JavaScript
+		 ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	<script src="bootstrapexample.js"></script>
+
+</body>
+</html>
